@@ -1,0 +1,11 @@
+#Regole del .gitignore
+# pippo -> tutti i FILE e le CARTELLE (incluso il contenuto) che si chiamano "pippo"
+# pippo/ -> tutti i file e le cartelle CONTENUTI in una CARTELLA che si chiama "pippo"
+# pippo.ext -> tutti i FILE che si chiamano "pippo" e hanno ESTENSIONE "ext"
+# /pippo.ext -> SOLO il file pippo.ext che si trova nella ROOT
+# *.ext -> tutti i FILE con ESTENSIONE "ext"
+# *ippo/ -> tutte le CARTELLE il cui nome finisce per "ippo"
+
+# Ignore temporary files
+*.tmp
+.DS_Store
