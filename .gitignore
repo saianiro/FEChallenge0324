@@ -9,3 +9,6 @@
 # Ignore temporary files
 *.tmp
 .DS_Store
+
+# Ignore .vscode folder (impostazioni personalizzate)
+.vscode
