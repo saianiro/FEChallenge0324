@@ -1,0 +1,105 @@
+/* Questo è un commento in css */
+/* I selettori CSS servono ad "identificare" uno o più elementi all'interno della pagina HTML.
+possono essere :
+- tag : body, div, h1, p, ...
+- .classe : .pippo, .menu, .menu-item, .articolo, ... può essere assegnata a più elementi HTML
+- #id : #menu-principale, #logo, ... si assegna ad un solo elemento HTML
+*/
+
+/* importo il file reset.css PRIMA di scrivere le nuove regole */
+@import url(reset.css);
+
+/* scelgo un colore di sfondo per tutte le pagine del mio progetto:
+applico la regola al tag body, che sono certa sia presente in ciascuna pagina HTML */
+body {
+	/* per pigrizia, uso un colore "predefinito" */
+	background: teal; 
+}
+
+/* questa regola css si applica a tutti gli elementi con classe "text" del progetto */
+.text {
+	/* definisce il colore del testo in esadecimale*/
+	color: #72c0d2;
+	/* permette di scegliere un font */
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	/* indica lo "spessore" del font: da sottile (200 o 300) a super grassetto (800 o 900) */
+	font-weight: 400;
+	/* size è la dimensione del font: 1rem vale circa 16px */ 
+	font-size: 1.8rem;
+}
+
+/* la classe accent che ho assegnato allo span, mi permette di mettere in evidenza le parole */
+.accent {
+	color: #d2b172;
+	font-weight: 700;
+}
+
+/* separando due selettori con la virgola, posso scrivere una regola che si applicherà 
+ad entrambi, anche se sono completamente diversi come in questo caso */
+h1, h2 {
+	color: #193339;
+	font-size: 3rem;
+}
+
+/* sfrutto l'effetto "cascata" del css e sovrascrivo la dimensione del font per h2 */
+h2 {
+	font-size: 2.5rem;
+}
+
+/* per modificare l'aspetto dei link SOLO all'interno del testo (e non nella lista)
+utilizzo una combinazione di classe e tag: seleziono i tag a contenuti all'interno 
+di un elemento HTML che ha classe text (attenzione allo spazio tra i selettori...) */
+.text a {
+	color: #22377c;
+	/* tolgo il bruttissimo sottolineato */
+	text-decoration: none;
+	font-weight: 600;
+}
+
+/* ora voglio cambiare il colore di sfondo delle pagine di Venere e Marte.
+Se assegno nuove regole alle classi venus e mars, queste sovrascriveranno 
+la regola assegnata al tag body, che invece non viene modificata nelle pagine 
+di Mercurio e Terra */
+.venus {
+	background: aquamarine;
+}
+.mars {
+	background: tomato;
+}
+
+/* non mi piace più il colore dei titoli e del testo nelle pagine di Marte e Venere.
+Con un'altra combinazione classi e tag, modifico entrambi gli elementi SOLO per quelle pagine */
+.venus h1, .venus .text {
+	/* questo invece è il valore di un colore in rgb */
+	color: rgb(71, 144, 120);
+}
+.mars h1, .mars .text {
+	color: brown;
+}
+
+/* Stilizzo gli elementi button sfruttando il box-model */
+button {
+	/* gli faccio un bordino scuro */
+	border: 0.5rem solid #193339;
+	/* arrotondiamo, vah... */
+	border-radius: 1rem;
+	/* aggiungo un padding, ovvero uno spazio interno rispetto al bordo:
+	separerà il testo del bottone dal bordo stesso */
+	/* voglio fare un bel bottone enorme, gli do 5rem di spazio left e right
+	e qualcosa meno su top e bottom */
+	padding: 3rem 5rem;
+	background: #355860;
+	/* aggiungo anche un margin, ovvero uno spazio esterno rispetto al bordo:
+	servirà a separare il bottone dagli altri elementi HTML della pagina */
+	margin: 4rem;
+}
+
+/* per cambiare l'aspetto del testo del bottone, devo agire sul tag a,
+ma non voglio cambiare tutti gli altri link! */
+button a {
+	color: darkturquoise;
+	font-size: 2rem;
+	font-weight: 600;
+	/* un'ombra piccolissima, 1 pixel appena, migliora notevolmente la leggibilità del testo */
+	text-shadow: 0 1px whitesmoke;
+}

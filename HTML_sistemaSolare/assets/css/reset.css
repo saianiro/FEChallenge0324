@@ -1,0 +1,56 @@
+/* Reset CSS */
+/* queste regole CSS servono ad annullare le spaziature che vengono inserite
+di default dal browser */ 
+
+/* Margin e padding a zero per tutti gli elementi */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* ora posso applicare un paio di regolette sensate... */
+body {
+	/* questo padding applicato ai 4 lati del body impedisce a testo e immagini
+	di risultare "appiccicati" ai bordi della finestra del browser */
+	padding: 2rem;
+	/* l'interlinea maggiore di 1 aumenta la leggibilità del testo */
+  line-height: 1.3;
+}
+
+h1 {
+	/* voglio che tutti i titoli abbiano un minimo di spazio libero sotto */
+	margin-bottom: 1rem;
+	/* così i titoli vengono in grassetto */
+	font-weight: 800;
+}
+
+h2 {
+	/* per i sottotitoli aumento la spaziatura */
+	margin-bottom: 2rem;
+	/* e diminuisco il grassetto */
+	font-weight: 300;
+}
+
+/* non ha senso scrivere troppe regole all'interno del reset.css, di norma bisognerebbe elencare
+solo quelle che possono essere considerate "di default", ad esempio:
+- il padding sul body sarà lo stesso in tutte le pagine;
+- la dimensione dei titoli e dei sottotitoli dovrà essere sempre la stessa;
+- anche interlinea e dimensione del testo devono restare coerenti;
+- i colori i questo specifico progetto cambiano in base alla pagina, quindi non li scrivo qui.
+Nel reset.css di solito si usano i tag come selettori CSS: non è obbligatorio ma è molto utile. */

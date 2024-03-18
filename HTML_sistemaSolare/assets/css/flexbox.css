@@ -1,0 +1,67 @@
+/* Questo è un file CSS collegato solo alla pagina flex.html */
+/* Contiene alcuni esempi sull'utilizzo della flexbox */
+
+/* l'elemento contenitore deve avere la regola display:flex */
+.parent {
+	display: flex;
+	/* aggiungo anche border e background */
+	border: 2px solid purple;
+	background: violet;
+	height: 100px;
+}
+
+.child {
+	/* anche qui aggiungo border e background */
+	border: 2px solid orangered;
+	background: orange;
+}
+
+img {
+	/* le immagini saranno alte il 100% dell'altezza del loro contenitore */
+	height: 100%;
+}
+
+.between {
+	justify-content: space-between;
+}
+
+.evenly {
+	justify-content: space-evenly;
+}
+
+.around {
+	justify-content: space-around;
+}
+
+.parent.align {
+	height: 200px;
+}
+
+.me {
+	height: 40px;
+}
+
+.ve, .ea {
+	height: 100px;
+}
+
+.ma {
+	height: 60px;
+}
+
+.ju {
+	height: 140px;
+}
+
+.sa {
+	height: 120px;
+}
+
+.ur, .ne {
+	height: 40px;
+}
+
+.align.center {
+	justify-content: space-between;
+	align-items: center;
+}

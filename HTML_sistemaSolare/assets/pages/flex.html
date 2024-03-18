@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>FlexBox!</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../css/flexbox.css">
+	</head>
+	<body>
+
+		<!-- Per utilizzare la struttura della flexbox, devo per prima cosa creare 
+		un elemento "contenitore" al cui interno inserire gli elementi da ordinare.
+		Solo i FIGLI DIRETTI dell'elemento parent saranno influenzati dalle regole
+		della flexbox -->
+		<p>I valori di default della flexbox sono</p>
+		<ul>
+			<li>flex-direction: row</li>
+			<li>justify-content: flex-start</li>
+		</ul>
+		<div class="parent default">
+			<div class="child">
+				<img src="../img/mercury.png">
+			</div>
+			<div class="child">
+				<img src="../img/venus.png">
+			</div>
+			<div class="child">
+				<img src="../img/earth.png">
+			</div>
+			<div class="child">
+				<img src="../img/mars.png">
+			</div>
+			<div class="child">
+				<img src="../img/jupiter.png">
+			</div>
+			<div class="child">
+				<img src="../img/saturn.png">
+			</div>
+			<div class="child">
+				<img src="../img/uranus.png">
+			</div>
+			<div class="child">
+				<img src="../img/neptune.png">
+			</div>
+		</div>
+
+		<!-- justify-content: space-between -->
+		<p>Qui lo spazio orizzontale rimanente viene distribuito tra i pianeti, esludendo 
+		i bordi esterni: non c'è spazio a sinistra di Mercurio e a destra di Nettuno.</p> 
+		<ul>
+			<li>justify-content: space-between</li>
+		</ul>
+		<div class="parent between">
+			<div class="child">
+				<img src="../img/mercury.png">
+			</div>
+			<div class="child">
+				<img src="../img/venus.png">
+			</div>
+			<div class="child">
+				<img src="../img/earth.png">
+			</div>
+			<div class="child">
+				<img src="../img/mars.png">
+			</div>
+			<div class="child">
+				<img src="../img/jupiter.png">
+			</div>
+			<div class="child">
+				<img src="../img/saturn.png">
+			</div>
+			<div class="child">
+				<img src="../img/uranus.png">
+			</div>
+			<div class="child">
+				<img src="../img/neptune.png">
+			</div>
+		</div>
+
+		<!-- justify-content: space-evenly -->
+		<p>Qui lo spazio orizzontale rimanente viene distribuito tra i pianeti, 
+		inclusi i bordi esterni a sinistra di Mercurio e a destra di Nettuno</p> 
+		<ul>
+			<li>justify-content: space-evenly</li>
+		</ul>
+		<div class="parent evenly">
+			<div class="child">
+				<img src="../img/mercury.png">
+			</div>
+			<div class="child">
+				<img src="../img/venus.png">
+			</div>
+			<div class="child">
+				<img src="../img/earth.png">
+			</div>
+			<div class="child">
+				<img src="../img/mars.png">
+			</div>
+			<div class="child">
+				<img src="../img/jupiter.png">
+			</div>
+			<div class="child">
+				<img src="../img/saturn.png">
+			</div>
+			<div class="child">
+				<img src="../img/uranus.png">
+			</div>
+			<div class="child">
+				<img src="../img/neptune.png">
+			</div>
+		</div>
+
+		<!-- justify-content: space-around -->
+		<p>space-around suddivide lo spazio orizzontale rimanente distribuendone una 
+		frazione doppia tra i pianeti e una frazione singola ai bordi esterni
+		(come se i pianeti si tenessero per mano: tra un pianeta e l'altro ci sono 2
+		braccia di spazio, ma tra Mercurio o Nettuno e il bordo c'è un braccio solo)</p> 
+		<ul>
+			<li>justify-content: space-around</li>
+		</ul>
+		<div class="parent around">
+			<div class="child">
+				<img src="../img/mercury.png">
+			</div>
+			<div class="child">
+				<img src="../img/venus.png">
+			</div>
+			<div class="child">
+				<img src="../img/earth.png">
+			</div>
+			<div class="child">
+				<img src="../img/mars.png">
+			</div>
+			<div class="child">
+				<img src="../img/jupiter.png">
+			</div>
+			<div class="child">
+				<img src="../img/saturn.png">
+			</div>
+			<div class="child">
+				<img src="../img/uranus.png">
+			</div>
+			<div class="child">
+				<img src="../img/neptune.png">
+			</div>
+		</div>
+
+		<!-- align-items: center -->
+		<p>Qui lo spazio verticale rimanente viene distribuito equamente 
+		sopra e sotto gli elementi</p> 
+		<ul>
+			<li>justify-content: space-between</li>
+			<li>align-items: center</li>
+		</ul>
+		<div class="parent align center">
+			<div class="child me">
+				<img src="../img/mercury.png">
+			</div>
+			<div class="child ve">
+				<img src="../img/venus.png">
+			</div>
+			<div class="child ea">
+				<img src="../img/earth.png">
+			</div>
+			<div class="child ma">
+				<img src="../img/mars.png">
+			</div>
+			<div class="child ju">
+				<img src="../img/jupiter.png">
+			</div>
+			<div class="child sa">
+				<img src="../img/saturn.png">
+			</div>
+			<div class="child ur">
+				<img src="../img/uranus.png">
+			</div>
+			<div class="child ne">
+				<img src="../img/neptune.png">
+			</div>
+		</div>
+	
+		<script src="" async defer></script>
+	</body>
+</html>

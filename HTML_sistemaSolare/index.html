@@ -9,6 +9,8 @@
 		<link rel="stylesheet" href="assets/css/style.css">
 	</head>
 	<body>
+		<p>A questo <a href="assets/pages/flex.html">link</a> ho fatto 
+		un paio di esperimenti con la <span class="accent">FLEX BOX</span></p>
 		<!-- Questo è un commento -->
 		<!-- Nel codice, i commenti vengono usati come appunti, postit, promemoria, valvole di sfogo, psicologi, consulenti relazionali, life coach e guru della mindfulness -->
 		<!-- Questo file contiene la struttura HTML di una semplice pagina web dedicata al Sistema Solare -->
@@ -17,11 +19,26 @@
 
 		<div>
 			<!-- dentro al mio contenitore metto un titolo, h1 -->
-			<h1>Il Sistema Solare</h1>
+			<h1><span>Il Sistema Solare</span></h1>
 			<!-- e poi un sottotitolo, h2 -->
 			<h2>Il luogo che chiamiamo casa</h2>
 			<!-- a seguire, un bel paragrafetto esplicativo, courtesy of ChatGPT -->
-			<p>Il sistema solare è un complesso sistema astronomico che comprende il sole e tutti i corpi celesti gravitanti attorno ad esso. Questi corpi includono otto pianeti principali - Mercurio, Venere, Terra, Marte, Giove, Saturno, Urano e Nettuno - insieme a loro satelliti, anelli, asteroidi, comete e altri corpi minori. Il sole, una stella di classe G, costituisce il nucleo centrale del sistema solare, fornendo l'energia attraverso il processo di fusione nucleare. La disposizione e la dinamica di questi corpi celesti sono regolate dalla forza di gravità del sole, che mantiene l'ordine e l'armonia che caratterizzano il nostro coinvolgente sistema solare.</p>
+			<p class="text">Il sistema solare è un complesso sistema astronomico che comprende il sole e tutti i corpi celesti gravitanti attorno ad esso.
+			<!-- l'elemento br (break line) manda a capo il testo -->
+			<br>Questi corpi includono otto pianeti principali - 
+			<!-- se invece il testo va a capo ma non c'è un br, non si vedranno interruzioni,
+			nemmeno se ad ogni parola corrisponde un link -->
+			<a href="assets/pages/mercury.html">Mercurio</a>, 
+			<a href="assets/pages/venus.html">Venere</a>, 
+			<a href="assets/pages/earth.html">Terra</a>, 
+			<a href="assets/pages/mars.html">Marte</a>,  
+			Giove, 
+			Saturno, 
+			Urano 
+			e Nettuno
+			 - insieme a loro satelliti, anelli, asteroidi, comete e altri corpi minori.
+			<!-- L'elemento span con mi permette di "isolare" singole parole o frasi all'interno del testo --> 
+			<br>Il <span class="accent">Sole</span>, una stella di classe G, costituisce il nucleo centrale del sistema solare, fornendo l'energia attraverso il processo di fusione nucleare. La disposizione e la dinamica di questi corpi celesti sono regolate dalla forza di gravità del sole, che mantiene l'ordine e l'armonia che caratterizzano il nostro coinvolgente sistema solare.</p>
 			<!-- COINVOLGENTE?!? o_O' -->
 
 			<!-- aggiungo un altro contenitore -->
@@ -30,19 +47,19 @@
 				<ul>
 					<!-- nella lista, ogni elemento (li) contiene un link -->
 					<li>
-						<!-- href="#" si usa come segnaposto: il link non funziona adesso, ma basterà aggiornare il valore di href per "attivarlo" -->
-						<a href="#">Mercurio</a>
+						<a href="assets/pages/mercury.html">Mercurio</a>
 					</li>
 					<li>
-						<a href="#">Venere</a>
+						<a href="assets/pages/venus.html">Venere</a>
 					</li>
 					<li>
-						<a href="#">Terra</a>
+						<a href="assets/pages/earth.html">Terra</a>
 					</li>
 					<li>
-						<a href="#">Marte</a>
+						<a href="assets/pages/mars.html">Marte</a>
 					</li>
 					<li>
+						<!-- href="#" si usa come segnaposto: alcuni link non funzionano adesso, ma basta aggiornare il valore di href per "attivarli" -->
 						<a href="#">Giove</a>
 					</li>
 					<li>
@@ -56,6 +73,37 @@
 					</li>
 				</ul>
 			</div>
+
+			<!-- posso fare anche una lista ordinata, ol 
+			la differenza è che ci sono i numeri al posto dei pallini... -->
+			<ol>
+				<!-- nella lista, ogni elemento (li) contiene un link 
+				ma questa volta è un'immagine (img) -->
+				<li>
+					<a href="assets/pages/mercury.html"><img src="assets/img/mercury.png"></a>
+				</li>
+				<li>
+					<a href="assets/pages/venus.html"><img src="assets/img/venus.png"></a>
+				</li>
+				<li>
+					<a href="assets/pages/earth.html"><img src="assets/img/earth.png"></a>
+				</li>
+				<li>
+					<a href="assets/pages/mars.html"><img src="assets/img/mars.png"></a>
+				</li>
+				<li>
+					<a href="#"><img src="assets/img/jupiter.png"></a>
+				</li>
+				<li>
+					<a href="#"><img src="assets/img/saturn.png"></a>
+				</li>
+				<li>
+					<a href="#"><img src="assets/img/uranus.png"></a>
+				</li>
+				<li>
+					<a href="#"><img src="assets/img/neptune.png"></a>
+				</li>
+			</ol>
 		</div>
 
 		<script src="" async defer></script>
