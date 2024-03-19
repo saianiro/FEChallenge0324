@@ -1,0 +1,86 @@
+/* mobile portrait */
+/* attivo la css grid */
+.parent {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 50px 30px 200px 50px 100px;
+}
+
+.uno {
+	/*grid-area: head;*/
+	background: violet;
+}
+
+.due {
+	/*grid-area: navb;*/
+	background: turquoise;
+}
+
+.tre {
+	/*grid-area: side;*/
+	background: rgb(221, 62, 192);
+	display: none;
+}
+
+.qua {
+	/*grid-area: main;*/
+	background: rgb(224, 155, 64);
+}
+
+.cin {
+	/*grid-area: adve;*/
+	background: rgb(224, 112, 64);
+}
+
+.sei {
+	/*grid-area: foot;*/
+	background: rgb(149, 224, 64);
+}
+
+
+@media screen and (min-width: 600px) {
+	.parent {
+		grid-template-columns: 50% 40% 10%;
+		grid-template-rows: 50px 30px 200px 100px;
+
+		grid-template-areas: 
+			"head head head"
+			"navb side side"
+			"main main adve"
+			"foot foot foot";
+	}
+	.uno {
+		grid-area: head;
+	}
+	.due {
+		grid-area: navb;
+	}
+	.tre {
+		grid-area: side;
+		display: block;
+	}
+	.qua {
+		grid-area: main;
+	}
+	.cin {
+		grid-area: adve;
+	}
+	.sei {
+		grid-area: foot;
+	}
+}
+@media screen and (min-width: 1000px) {
+	.parent {
+		grid-template-columns: 80% 20%;
+		/*grid-template-rows: 50px 30px 200px 100px;*/
+
+		grid-template-areas: 
+			"head head"
+			"navb adve"
+			"main main"
+			"foot foot";
+	}
+	.tre {
+		display: none;
+	}
+}
