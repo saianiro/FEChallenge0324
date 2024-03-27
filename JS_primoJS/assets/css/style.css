@@ -1,0 +1,38 @@
+.colors {
+	display: flex;
+	justify-content: space-around;
+}
+.color {
+	height: 150px;
+	width: 150px;
+	color: gainsboro;
+	border: 2px solid black;
+	/* uso le proprietà della flexbox per centrare il testo */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.change {
+	/* sovrascrivo la larghezza dell'ultimo div */
+	width: 100%;
+	/* e il colore del testo */
+	color: black;
+	margin-top: 2rem;
+}
+
+#red {
+	background: #ff0000;
+	border-color: #a52a2a;
+}
+#blue {
+	background: #0000ff;
+	border-color: #00008b;
+}
+#green {
+	background: #008000;
+	border-color: #006400;
+}
+#yellow {
+	background: #ffff00;
+	border-color:#ffd700
+}
