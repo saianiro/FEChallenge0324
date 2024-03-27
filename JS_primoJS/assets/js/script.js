@@ -128,10 +128,63 @@ function chBackColor(color) {
 	document.querySelector("#target").classList.add(newClass);
 }
 
+// querySelectorAll
 
+let lista = document.querySelectorAll(".item");
+// lista di elemento html
+console.log(lista);
+// faccio 2 array di 3 elementi ciascuno
+let cars = ["Lamborghini", "Maserati", "Ferrari"];
+let fruits = ["Apple", "Lemon", "Strawberry"];
+// l'elemento di indice 0 è il primo elemento dell'array
+console.log("Il primo elemento di cars è " + cars[0]);
+console.log("Il primo elemento di fruits è " + fruits[0]);
 
+let lista2 = document.querySelectorAll(".parent");
+console.log(lista2);
 
+lista[0].innerText = "ci provo ma non sono convinta...";
+lista[2].innerText = " e invece funziona";
 
+// visualizzo il log di un elemento che NON c'è nell'array
+console.log(fruits[3]);
+
+// ciclo FOR - sintassi classica
+let numbers = [12 , 40, 3, 52, 1, 9, 17, 38];
+// 3 criteri : inizio, fine, incremento (index = index + 1 -> index ++)
+// index = index + 2 -> index += 2
+for(let index = 0; index < numbers.length; index++) {
+	// SE nessuno risponde al citofono, passo alla casa successiva
+	// IF controllore di flusso
+	// CONDIZIONE -> SE è VERA
+	if(numbers[index] > 17) {
+		// istruzioni da svolgere SE la CONDIZIONE è VERA
+		console.log(numbers[index] + " è MAGGIORENNE");
+	}
+	else {
+		// istruzioni da svolgere SE la CONDIZIONE è FALSA
+		console.log(numbers[index] + " è minorenne");
+	}
+
+	//let incremento = numbers[index] += 2;
+	//console.log(incremento);
+}
+
+// il ciclo FOR è flessibile! 
+// non ha bisogno (per forza) di un array per funzionare!
+for(let index = 2; index < 11; index+=2){
+	console.log(index);
+}
+
+// ciclo FOREACH - solo per gli array!
+numbers.forEach(function(el){
+	if(el > 17){
+		console.log(el + " è MAGGIORENNE");
+	}
+	else {
+		console.log(el + " è minorenne");
+	}
+})
 
 
 
