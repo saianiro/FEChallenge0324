@@ -36,3 +36,20 @@
 	background: #ffff00;
 	border-color:#ffd700
 }
+
+.rosso {
+	border: 10px solid #a52a2a;
+	color: #a52a2a;
+}
+.blu {
+	border: 10px solid #00008b;
+	color: #00008b;
+}
+.verde {
+	border: 10px solid #006400;
+	color: #006400;
+}
+.giallo {
+	border: 10px solid #ffd700;
+	color: #ffd700;
+}
